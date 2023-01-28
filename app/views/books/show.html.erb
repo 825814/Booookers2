@@ -1,0 +1,30 @@
+<h1>Book detail</h1>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+<div class="container">
+
+
+    <div class="col-lg-8">
+
+      <table class="table table-striped">
+
+        <tbody>
+          <% @books.each do |book| %>
+            <tr>
+              <td>
+                <label>f.file_field(user_id)</label>
+                <%= image_tag 'sample-author1.jpg' %>
+                </td>
+              <td><%= @book.title %></td>
+              <td><%= @book.opinion %></td>
+
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+</div>
+
